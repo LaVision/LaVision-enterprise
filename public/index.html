@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./assets/pictures/LaVision.png" />
+    <title>LaVision</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="ui top attached secondary pointing menu">
+      <a class="header item" href="/"> LaVision Enterprise </a>
+      <div class="ui pointing dropdown link item">
+        <span class="text">Locations</span> <i class="dropdown icon"></i>
+        <div class="menu">
+          <a href="./locations/ottawa.html" class="item" style="color: black;"
+            >Ottawa Branch</a
+          >
+          <a href="./locations/vancouver.html" class="item" style="color: black;"
+            >Vancouver Branch</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="ui main text container"></div>
+    <div class="ui grid">
+      <div class="row">
+        <div class="column padding-reset">
+          <div class="ui huge message page grid">
+            <div class="ui divided items">
+              <div class="item">
+                <div class="image">
+                  <img src="./assets/pictures/LaVision.png" alt="" />
+                </div>
+                <div class="middle aligned content">
+                  <h1 class="ui header" style="margin-top:30px;">
+                    <div class="content">
+                      <span style="font-size:70px; ">LaVision Enterprise</span>
+                      <div class="sub header" style="padding-top: 10px;">
+                        Keeping Track
+                      </div>
+                    </div>
+                  </h1>
+                </div>
+              </div>
+              <div class="ui divider"></div>
+              <div class="description">
+                A clean, efficient way to estimate the population of humans in a
+                given area.
+              </div>
+              <br />
+              <button class="ui right blue button" type="submit" id="test">
+                View available locations &raquo;
+              </button>
+              <div class="ui basic modal test">
+                <i class="close icon"></i>
+                <div class="header">Where do you want to go today?</div>
+                <div class="content">
+                  <div class="ui two column stackable grid">
+                    <div class="two column row">
+                      <div class="column">
+                        <a class="fluid ui teal button">Ottawa Branch</a>
+                      </div>
+                      <div class="column">
+                        <a class="fluid ui blue button">Vancouver Branch</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui hidden divider"></div>
+    <div class="ui page grid">
+      <div class="row">
+        <div class="column">
+          <span>&copy; LaVision 2019</span>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#test").click(function() {
+          $(".test").modal("show");
+        });
+        $(".test").modal({
+          closable: true
+        });
+      });
+      $(function() {
+        $(".ui.dropdown").dropdown();
+      });
+    </script>
+  </body>
+</html>

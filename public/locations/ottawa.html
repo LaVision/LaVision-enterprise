@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>LaVision</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <link rel="icon" href="../assets/pictures/LaVision.png" />
+  </head>
+  <body>
+    <div class="ui secondary pointing menu">
+      <a class="header item" href="/"> LaVision Enterprise</a>
+      <div class="ui pointing dropdown link item">
+        <span class="text">Ottawa Branch</span> <i class="dropdown icon"></i>
+        <div class="menu">
+          <a href="./vancouver.html" class="item" style="color: black;"
+            >Vancouver Branch</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="ui container" style="margin-top: 30px;">
+      <h1 class="ui huge header" style="margin-bottom: 30px;">Ottawa Branch Visitor Statistics</h1>
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Condition</th>
+            <th>Population</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Name">Victor's ice rink</td>
+            <td data-label="Condition">Sparse</td>
+            <td data-label="Population">10</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Max's ice rink</td>
+            <td data-label="Condition">Packed</td>
+            <td data-label="Population">30</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Maxine's ice rink</td>
+            <td data-label="Condition">Full</td>
+            <td data-label="Population">100</td>
+          </tr>
+          <tr>
+            <td data-label="Name">Zack's ice rink</td>
+            <td data-label="Condition">Empty</td>
+            <td data-label="Population">0</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="ui divider"></div>
+      <span>&copy; LaVision 2019</span>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $(".ui.dropdown").dropdown();
+      });
+    </script>
+  </body>
+</html>
